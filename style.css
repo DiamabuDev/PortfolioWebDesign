@@ -1,0 +1,640 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+/* End CSS Reset */
+
+body {
+    color: #1e1e24;
+    background-color: #F6F1F1;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #F6F1F1;
+    text-decoration: none;
+}
+
+/* navigation */
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-transform: uppercase;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav img {
+    max-height: 28px;
+}
+
+.menu {
+    display: none;
+    left: 0;
+    padding: 16px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.menu li {
+    margin-top: 12px;
+}
+
+.menu li:hover {
+    display: inline-block;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~.menu {
+    display: block;
+}
+
+.hamburger {
+    display: block;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* Main section */
+
+section {
+    margin: 0 auto;
+}
+
+.about-me,
+.projects,
+.background,
+.experience,
+.skills,
+.general-info {
+    width: 80%;
+}
+
+.navbar,
+.menu,
+.title,
+.metrics,
+.card-experience,
+footer {
+    background-color: #37306B;
+    color: #F6F1F1;
+}
+
+.home-presentation {
+    width: 70%;
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 45px;
+    padding-bottom: 60px;
+}
+
+.home-presentation h1,
+h2 {
+    color: #37306B;
+}
+
+.home-presentation h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.home-presentation img {
+    border-radius: 120px;
+    display: block;
+    margin: 70px auto;
+    width: 180px;
+}
+
+.home-presentation p {
+    font-size: 19px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.two-column,
+.four-columns,
+.main-footer-section {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+}
+
+.skill-columns {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.about-me img,
+.background img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.projects img,
+.general-info img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.background img {
+    width: 80%;
+}
+
+.about-me p,
+.background p,
+.general-info p {
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.about-me a,
+.projects a {
+    color: #37306B;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-me a:hover,
+.projects a:hover {
+    transition: 0.3s ease;
+    text-decoration: underline;
+}
+
+.metrics {
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.metrics div:first-of-type {
+    padding-left: 13px;
+}
+
+.card-experience,
+.card-skill {
+    border-radius: 20px;
+}
+
+.card-experience h3 {
+    font-weight: 500;
+    padding: 25px 20px 0;
+}
+
+.card-experience p {
+    font-weight: 300;
+    padding: 15px 20px 20px;
+}
+
+.card-skill {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-skill img {
+    margin-bottom: 15px;
+    width: 40px;
+}
+
+.general-info .two-column {
+    margin-top: 30px;
+}
+
+.general-info .two-column p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Contact */
+
+
+.center-container-form {
+    display: flex;
+    justify-content: center;
+}
+
+.center-container-form h1{
+    color: #37306B;
+    font-weight: bold;
+    font-size: 2.2em;
+    padding-bottom: 30px;
+}
+
+#label-hint-form {
+    margin-bottom: 40px;
+    font-size: large;
+}
+
+.center-container-form form {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    width: 70%;
+}
+
+.label-form {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.input-form {
+    margin: 0;
+    width: calc(100% - 7px);
+    margin-bottom: 25px;
+    border-radius: 7px;
+    font-size: 1.1em;
+    border: 1px solid #37306B;
+    height: 40px;
+}
+
+#textarea-form {
+    height: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border: 2px solid #37306B;
+}
+
+#button-send {
+    width: 100%;
+    height: 40px;
+    background-color: #37306B;
+    color: white;
+    border-radius: 10px;
+    padding: 0;
+    border: none;
+    font-size: large;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer i {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-transform: lowercase;
+}
+
+footer div {
+    margin-bottom: 20px;
+}
+
+.main-footer-section {
+    padding-top: 30px;
+}
+
+.footer-social-networks i {
+    font-size: 25px;
+    padding: 10px;
+}
+
+/*Tablet 768 (2 columnas)*/
+
+@media screen and (min-width: 768px) {
+
+    /* Navigation */
+
+    nav img {
+        max-height: 50px;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 20px;
+        position: static;
+    }
+
+    .menu li {
+        margin-top: 0px;
+        padding: 5px 14px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Main section */
+
+    .home-presentation h1 {
+        font-size: 38px;
+    }
+
+    .home-presentation p {
+        font-size: 19px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 33px;
+    }
+
+    .about-me img {
+        width: 240px;
+    }
+
+    .two-column,
+    .four-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .two-column {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .four-columns {
+        gap: 25px;
+    }
+
+    .skill-columns {
+        gap: 40px;
+    }
+
+    .main-footer-section {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 0;
+    }
+}
+
+/*Laptop 1024 (4 columnas)*/
+
+@media screen and (min-width: 1024px) {
+
+    .title h1 {
+        font-size: 55px;
+    }
+
+    .home-presentation {
+        width: 50%;
+    }
+
+    .home-presentation h1 {
+        font-size: 45px;
+    }
+
+    .home-presentation p {
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .about-me p,
+    .background p,
+    .general-info p {
+        font-size: 18px;
+    }
+
+    .background img {
+        width: 70%;
+    }
+
+    .about-me a,
+    .projects a,
+    .metrics {
+        font-size: 20px;
+    }
+
+    .four-columns {
+        gap: 25px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skill-columns {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .general-info .two-column {
+        gap: 0;
+    }
+
+    .general-info .two-column p {
+        font-size: 16px;
+    }
+
+    .general-info .two-column img {
+        height: 400px;
+        width: auto;
+    }
+
+    .general-info .two-column div {
+        text-align: center;
+    }
+}
+
+/*Laptop 1440 (4 columnas)*/
+
+@media screen and (min-width: 1440px) {
+
+    .menu {
+        font-size: 20px;
+    }
+
+    .home-presentation {
+        width: 40%;
+    }
+
+    .home-presentation p {
+        font-size: 23px;
+    }
+
+    .home-presentation img {
+
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .about-me p,
+    .background p,
+    .general-info p {
+        font-size: 21px;
+    }
+
+    .skill-columns {
+        gap: 50px;
+    }
+
+    .general-info .two-column p {
+        font-size: 18px;
+    }
+
+    .general-info .two-column div:first-of-type {
+        margin-left: 80px;
+    }
+
+    .general-info .two-column div:last-of-type {
+        margin-right: 80px;
+    }
+}
